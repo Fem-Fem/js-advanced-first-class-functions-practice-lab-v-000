@@ -13,13 +13,13 @@ function logDriversByHometown(drivers, hometown) {
   });
 }
 
-function driversByRevenue(drivers) {
-  sortedDrivers = drivers
-  sortedDrivers = sortedDrivers.sort(function (a, b) {
-    return a.revenue - b.revenue;
-  });
-  return sortedDrivers
-}
+// function driversByRevenue(drivers) {
+//   sortedDrivers = drivers
+//   sortedDrivers = sortedDrivers.sort(function (a, b) {
+//     return a.revenue - b.revenue;
+//   });
+//   return sortedDrivers
+// }
 
 function driversByName(drivers) {
   sortedDrivers = drivers
