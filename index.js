@@ -14,12 +14,6 @@ function logDriversByHometown(drivers, hometown) {
 }
 
 function driversByRevenue(drivers) {
-  drivers.forEach(function (driver) {
-    if (driver.hometown == hometown) {
-    console.log(driver.name);
-    }
-  });
-
   drivers.sort(function (a, b) {
   return a.revenue.localeCompare(b.revenue);
 });
