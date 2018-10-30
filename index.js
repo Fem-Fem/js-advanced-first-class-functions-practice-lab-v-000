@@ -28,3 +28,11 @@ function driversByName(drivers) {
   });
   return sortedDrivers
 }
+
+function totalRevenue()(drivers) {
+  sortedDrivers = drivers
+  sortedDrivers = sortedDrivers.sort(function (a, b) {
+    return a.name - b.name;
+  });
+  return sortedDrivers
+}
