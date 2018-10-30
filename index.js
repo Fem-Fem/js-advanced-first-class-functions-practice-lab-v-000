@@ -27,13 +27,16 @@ function driversByName(drivers) {
 
 function totalRevenue(drivers) {
   return drivers.reduce( function (total, driver) {
-    return driver.revenue + amount
+    return driver.revenue + total;
   })
 }
 
-var sum = euros.reduce( function(total, amount){
-  return total + amount
-});
+const totalRevenue = function (drivers) {
+  return drivers.reduce(function (total, currentDriver) {
+    return currentDriver.revenue + total;
+  }, 0);
+};
+
 
 function AverageRevenue(drivers) {
   sortedDrivers = drivers
