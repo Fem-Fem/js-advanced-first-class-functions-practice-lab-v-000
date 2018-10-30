@@ -26,8 +26,8 @@ function driversByName(drivers) {
 }
 
 function totalRevenue(drivers) {
-  return drivers.reduce( function (total, drivers.revenue) {
-    return drivers.revenue + amount
+  return drivers.reduce( function (total, driver) {
+    return driver.revenue + amount
   })
   // sortedDrivers = sortedDrivers.sort(function (a, b) {
   //   return a.name - b.name;
