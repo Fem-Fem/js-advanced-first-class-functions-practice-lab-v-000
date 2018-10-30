@@ -16,8 +16,5 @@ function logDriversByHometown(drivers, hometown) {
 function driversByRevenue(drivers) {
   drivers.sort(function (a, b) {
   return a.revenue.localeCompare(b.revenue);
-});
+  });
 }
-
-Receives an array of driver objects and returns a new array of driver objects
-sorted by their revenue attribute from lowest to highest.
