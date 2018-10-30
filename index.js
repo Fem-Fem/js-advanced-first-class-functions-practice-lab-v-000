@@ -1,19 +1,16 @@
 // Code your solution in this file!
-// logDriverNames() — Receives an array of driver objects and logs the name attribute of each driver to the console.
-const logDriverNames = function (drivers) {
+function logDriverNames(drivers) {
   drivers.forEach(function (driver) {
-    console.log(driver.name);
+    Console.log(driver);
   });
-};
+}
 
-// const logDriversByHometown = function (drivers, location) {
-//   drivers.forEach(function (driver) {
-//     if (driver.location == location) {
-//       console.log(driver.name)
-//     };
-//   });
-// }
+const getTotalAmountForProducts = function (products) {
+  let totalPrice = 0;
 
-const driversByName = function (drivers) {
-  drivers.sort(drivers);
+  products.forEach(function (product) {
+    totalPrice += product.price;
+  });
+
+  return totalPrice;
 };
