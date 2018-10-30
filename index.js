@@ -13,13 +13,17 @@ function logDriversByHometown(drivers, hometown) {
   });
 }
 
-// function driversByRevenue(drivers) {
-//   sortedDrivers = drivers
-//   sortedDrivers = sortedDrivers.sort(function (a, b) {
-//     return a.revenue - b.revenue;
-//   });
-//   return sortedDrivers
-// }
+function driversByRevenue(drivers) {
+  return drivers.slice().sort(function (a, b) {
+    return a.revenue - b.revenue;
+  });
+  return sortedDrivers
+}
+
+const driversByRevenue = function (drivers) {
+  return drivers.slice().sort(function (driverOne, driverTwo) {
+    return driverOne.revenue - driverTwo.revenue;
+});
 
 function driversByName(drivers) {
   sortedDrivers = drivers
@@ -29,7 +33,7 @@ function driversByName(drivers) {
   return sortedDrivers
 }
 
-function totalRevenue()(drivers) {
+function totalRevenue(drivers) {
   sortedDrivers = drivers
   sortedDrivers = sortedDrivers.sort(function (a, b) {
     return a.name - b.name;
