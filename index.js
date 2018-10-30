@@ -28,14 +28,16 @@ function driversByName(drivers) {
 function totalRevenue(drivers) {
   return drivers.reduce( function (total, driver) {
     return driver.revenue + total;
-  })
+  }, 0)
 }
+
 
 const totalRevenue = function (drivers) {
   return drivers.reduce(function (total, currentDriver) {
     return currentDriver.revenue + total;
   }, 0);
 };
+
 
 
 function AverageRevenue(drivers) {
