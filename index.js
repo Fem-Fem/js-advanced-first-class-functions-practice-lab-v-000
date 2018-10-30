@@ -1,10 +1,10 @@
 // Code your solution in this file!
 function logDriverNames(drivers) {
   drivers.forEach(function (driver) {
-    Console.log(driver);
+    console.log(driver);
   });
 }
-// 
+//
 // const getTotalAmountForProducts = function (products) {
 //   let totalPrice = 0;
 //
