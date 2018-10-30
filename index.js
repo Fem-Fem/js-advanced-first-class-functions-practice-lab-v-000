@@ -21,7 +21,7 @@ function driversByRevenue(drivers) {
   return sortedDrivers
 }
 
-function driversByRevenue(drivers) {
+function driversByName(drivers) {
   sortedDrivers = drivers
   sortedDrivers = sortedDrivers.sort(function (a, b) {
     return a.revenue - b.revenue;
