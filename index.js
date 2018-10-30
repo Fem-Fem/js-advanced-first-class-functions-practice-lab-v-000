@@ -31,13 +31,8 @@ function totalRevenue(drivers) {
   }, 0);
 }
 
-
-
-
 function AverageRevenue(drivers) {
-  sortedDrivers = drivers
-  sortedDrivers = sortedDrivers.sort(function (a, b) {
-    return a.name - b.name;
-  });
-  return sortedDrivers
+  return drivers.reduce( function (total, driver) {
+    return driver.revenue + total;
+  }, 0);
 }
