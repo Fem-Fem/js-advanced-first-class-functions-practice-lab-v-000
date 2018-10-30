@@ -4,13 +4,9 @@ function logDriverNames(drivers) {
     console.log(driver.name);
   });
 }
-//
-// const getTotalAmountForProducts = function (products) {
-//   let totalPrice = 0;
-//
-//   products.forEach(function (product) {
-//     totalPrice += product.price;
-//   });
-//
-//   return totalPrice;
-// };
+
+function logDriversByHometown(drivers) {
+  drivers.forEach(function (driver) {
+    console.log(driver.name);
+  });
+}
