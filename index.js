@@ -24,14 +24,6 @@ function driversByName(drivers) {
     return a.name - b.name;
   });
 }
-//
-// function driversByName(drivers) {
-//   sortedDrivers = drivers
-//   sortedDrivers = sortedDrivers.sort(function (a, b) {
-//     return a.name - b.name;
-//   });
-//   return sortedDrivers
-// }
 
 function totalRevenue(drivers) {
   sortedDrivers = drivers
